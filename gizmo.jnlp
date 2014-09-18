@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="0.2 1.0" codebase="http://thomas.ricaud.perso.sfr.fr" href="gizmo.jnlp">
+<information>
+<title>Gizmo</title>
+<vendor>Thomas Ricaud</vendor>
+<homepage href="gizmo.html"/>
+<description>Gizmo</description>
+<icon href="kathys.gif"/>
+<offline-allowed/>
+</information>
+<resources>
+<j2se version="1.6+"/>
+<jar href="gizmo.jar"/>
+<jar href="gizmo_lib/jfxrt.jar                                                               "/>
+<jar href="gizmo_lib/commons-collections-3.2.jar                                                               "/>    
+<jar href="gizmo_lib/commons-configuration-1.2.jar                                                             "/>    
+<jar href="gizmo_lib/commons-lang-2.1.jar                                                                      "/>    
+<jar href="gizmo_lib/commons-logging-1.1.jar                                                                   "/>    
+<jar href="gizmo_lib/commons-net-2.0.jar                                                                       "/>    
+<jar href="gizmo_lib/commons-pool-1.2.jar                                                                      "/>    
+<jar href="gizmo_lib/hr-kernel-7.30.02008.1206.jar                                                             "/>    
+<jar href="gizmo_lib/hr-openhr-api-7.30.02008.1206.jar                                                         "/>    
+<jar href="gizmo_lib/swingx-all-1.6.4.jar                                                                      "/>    
+<jar href="gizmo_lib/commons-io-1.2.jar                                                                        "/>    
+<jar href="gizmo_lib/ganymed-ssh2-build251beta1.jar                                                            "/>    
+<jar href="gizmo_lib/commons-codec-1.3.jar                                                                     "/>    
+<jar href="gizmo_lib/cl-3.0.0662.jar                                                                            "/>   
+<jar href="gizmo_lib/com.ibm.icu_4.4.2.v20110823.jar                                                            "/>   
+<jar href="gizmo_lib/commons-cli-1.0.jar                                                                        "/>   
+<jar href="gizmo_lib/flute.jar                                                                                  "/>   
+<jar href="gizmo_lib/js.jar                                                                                     "/>   
+<jar href="gizmo_lib/ojdbc6.jar                                                                                 "/>   
+<jar href="gizmo_lib/org.apache.commons.codec_1.3.0.v201101211617.jar                                           "/>   
+<jar href="gizmo_lib/org.w3c.css.sac_1.3.0.v200805290154.jar                                                    "/>   
+<jar href="gizmo_lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar                                      "/>   
+<jar href="gizmo_lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar                                    "/>   
+<jar href="gizmo_lib/com.lowagie.text_2.1.7.v201004222200.jar                                                   "/>   
+<jar href="gizmo_lib/derby.jar                                                                                  "/>   
+<jar href="gizmo_lib/ganymed-ss2-build251beta1-src.jar                                                          "/>   
+<jar href="gizmo_lib/ganymed-ssh2-build251beta1-javadoc.jar                                                     "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v201107221502.jar               "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.ibm.db2.luw_1.0.2.v201107221502.jar                       "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.0.4.v201107221502.jar 	        "/>
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.ibm.informix_1.0.1.v201107221502.jar                      "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.0.4.v201107221502.jar	        "/>
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.msft.sqlserver_1.0.2.v201212120617.jar                    "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.0.1.v201201240505.jar       "/>
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.mysql_1.0.4.v201212120617.jar                             "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.mysql.dbdefinition_1.0.4.v201109022331.jar                "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.oda.ws_1.2.4.v201203221631.jar                            "/>   
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.oda.xml_1.2.4.v201301161136.jar                            "/>  
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.oracle_1.0.0.v201107221506.jar                             "/>  
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.oracle.dbdefinition_1.0.103.v201206010214.jar		 "/>
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.postgresql_1.1.1.v201205252207.jar                         "/>  
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.postgresql.dbdefinition_1.0.2.v201110070445.jar 		 "/>
+<jar href="gizmo_lib/org.eclipse.datatools.modelbase.dbdefinition_1.0.2.v201107221519.jar                        "/>  
+<jar href="gizmo_lib/org.eclipse.datatools.modelbase.derby_1.0.0.v201107221519.jar                               "/>  
+<jar href="gizmo_lib/org.eclipse.datatools.modelbase.sql_1.0.6.v201208230744.jar                                 "/>  
+<jar href="gizmo_lib/org.eclipse.datatools.modelbase.sql.query_1.1.4.v201212120619.jar                           "/>  
+<jar href="gizmo_lib/org.eclipse.emf_2.6.0.v20130125-0826.jar                                                    "/>  
+<jar href="gizmo_lib/org.eclipse.emf.common_2.8.0.v20130125-0546.jar                                             "/>  
+<jar href="gizmo_lib/org.eclipse.emf.ecore_2.8.3.v20130125-0546.jar                                              "/>  
+<jar href="gizmo_lib/org.eclipse.emf.ecore.change_2.8.0.v20130125-0546.jar                                       "/>  
+<jar href="gizmo_lib/org.eclipse.emf.ecore.xmi_2.8.1.v20130125-0546.jar                                          "/>  
+<jar href="gizmo_lib/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar                                          "/>  
+<jar href="gizmo_lib/org.eclipse.equinox.preferences_3.5.1.v20121031-182809.jar                                  "/>  
+<jar href="gizmo_lib/org.eclipse.osgi_3.8.2.v20130124-134944.jar                                                 "/>  
+<jar href="gizmo_lib/org.eclipse.osgi.services_3.3.100.v20120522-1822.jar                                        "/>  
+<jar href="gizmo_lib/org.eclipse.update.configurator_3.3.200.v20120912-144026.jar                                "/>  
+<jar href="gizmo_lib/org.w3c.dom.smil_1.0.0.v200806040011.jar                                                    "/>  
+<jar href="gizmo_lib/org.w3c.dom.svg_1.1.0.v201011041433.jar                                                     "/>  
+<jar href="gizmo_lib/Tidy.jar                                                                                    "/>  
+<jar href="gizmo_lib/javax.wsdl_1.5.1.v201012040544.jar                                                          "/>  
+<jar href="gizmo_lib/javax.xml.stream_1.0.1.v201004272200.jar                                                    "/>  
+<jar href="gizmo_lib/org.apache.batik.bridge_1.6.0.v201011041432.jar                                              "/> 
+<jar href="gizmo_lib/org.apache.batik.css_1.6.0.v201011041432.jar                                                 "/> 
+<jar href="gizmo_lib/org.apache.batik.dom_1.6.0.v201011041432.jar                                                 "/> 
+<jar href="gizmo_lib/org.apache.batik.dom.svg_1.6.0.v201011041432.jar                                             "/> 
+<jar href="gizmo_lib/org.apache.batik.ext.awt_1.6.0.v201011041432.jar                                             "/> 
+<jar href="gizmo_lib/org.apache.batik.parser_1.6.0.v201011041432.jar                                              "/> 
+<jar href="gizmo_lib/org.apache.batik.pdf_1.6.0.v201105071520.jar                                                 "/> 
+<jar href="gizmo_lib/org.apache.batik.svggen_1.6.0.v201011041432.jar                                              "/> 
+<jar href="gizmo_lib/org.apache.batik.transcoder_1.6.0.v201011041432.jar                                          "/> 
+<jar href="gizmo_lib/org.apache.batik.util_1.6.0.v201011041432.jar                                                "/> 
+<jar href="gizmo_lib/org.apache.batik.util.gui_1.6.0.v201011041432.jar                                            "/> 
+<jar href="gizmo_lib/org.apache.batik.xml_1.6.0.v201011041432.jar                                                 "/> 
+<jar href="gizmo_lib/org.apache.commons.logging_1.0.4.v201101211617.jar                                           "/> 
+<jar href="gizmo_lib/org.apache.xerces_2.9.0.v201101211617.jar                                                    "/> 
+<jar href="gizmo_lib/org.apache.xml.resolver_1.2.0.v201005080400.jar                                              "/> 
+<jar href="gizmo_lib/org.apache.xml.serializer_2.7.1.v201005080400.jar                                            "/> 
+<jar href="gizmo_lib/org.eclipse.birt.runtime_4.2.2.v20130216-1152.jar                                            "/> 
+<jar href="gizmo_lib/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar                                      "/> 
+<jar href="gizmo_lib/org.eclipse.core.expressions_3.4.401.v20120912-155018.jar                                    "/> 
+<jar href="gizmo_lib/org.eclipse.core.filesystem_1.3.200.v20130115-145044.jar                                     "/> 
+<jar href="gizmo_lib/org.eclipse.core.jobs_3.5.300.v20120912-155018.jar                                           "/> 
+<jar href="gizmo_lib/org.eclipse.core.resources_3.8.1.v20121114-124432.jar                                        "/> 
+<jar href="gizmo_lib/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar                                          "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity_1.2.7.v201302060508.jar                                   "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.apache.derby_1.0.103.v201212070447.jar                    "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.0.2.v201107221459.jar	  "/>
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.console.profile_1.0.10.v201109250955.jar                  "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.db.generic_1.0.1.v201107221459.jar                        "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.0.1.v201107221459.jar	  "/>
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.oda_3.3.4.v201212070447.jar                               "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.oda.consumer_3.2.5.v201109151100.jar                      "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.oda.design_3.3.6.v201212070447.jar                        "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.oda.flatfile_3.1.4.v201210260850.jar                      "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.oda.profile_3.2.8.v201209080429.jar                       "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.connectivity.sqm.core_1.2.6.v201212070447.jar                          "/> 
+<jar href="gizmo_lib/org.eclipse.datatools.enablement.hsqldb_1.0.0.v201107221502.jar                              "/> 
+</resources>
+<security>
+  <all-permissions/>
+</security>
+<application-desc main-class="gizmo.userinterface.Pagedacceuil"/>
+</jnlp>

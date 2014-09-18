@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="0.2 1.0" codebase="http://svhelene:8681/" href="interfaceCSGRDS.jnlp">
+<information>
+<title>Interface CSG RDS</title>
+<vendor>Thomas Ricaud</vendor>
+<homepage href="interface.html"/>
+<description>Interface CSGRDS</description>
+<icon href="kathys.gif"/>
+<offline-allowed/>
+</information>
+<resources>
+<j2se version="1.3+"/>
+<jar href="interfaceCSGRDS.jar"/>
+<jar href="interfaceCSGRDS_lib/hr-kernel-7.30.02008.1206.jar"/>
+<jar href="interfaceCSGRDS_lib/hr-openhr-api-7.30.02008.1206-javadoc.jar"/>
+<jar href="interfaceCSGRDS_lib/hr-openhr-api-7.30.02008.1206.jar"/>
+<jar href="interfaceCSGRDS_lib/activation-1.1.jar"/>
+<jar href="interfaceCSGRDS_lib/avalon-framework-4.1.3.jar"/>
+<jar href="interfaceCSGRDS_lib/cl-3.0.0662.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-beanutils-1.7.0.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-beanutils-core-1.7.0.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-codec-1.3.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-collections-3.2.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-configuration-1.2.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-dbcp-1.2.1.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-digester-1.7.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-fileupload-1.2.1.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-httpclient-3.0.1.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-io-1.2.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-lang-2.1.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-logging-1.1.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-logging-api-1.1.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-net-2.0.jar"/>
+<jar href="interfaceCSGRDS_lib/commons-pool-1.2.jar"/>
+<jar href="interfaceCSGRDS_lib/dom4j-1.4.jar"/>
+<jar href="interfaceCSGRDS_lib/isorelax-20020414.jar"/>
+<jar href="interfaceCSGRDS_lib/jaxb-api-2.2.1.jar"/>
+<jar href="interfaceCSGRDS_lib/jaxen-1.1.1.jar"/>
+<jar href="interfaceCSGRDS_lib/jaxp-api-1.4.1.jar"/>
+<jar href="interfaceCSGRDS_lib/junit-4.7.jar"/>
+<jar href="interfaceCSGRDS_lib/log4j-1.2.14.jar"/>
+<jar href="interfaceCSGRDS_lib/logkit-1.0.1.jar"/>
+<jar href="interfaceCSGRDS_lib/msv-20020414.jar"/>
+<jar href="interfaceCSGRDS_lib/relaxngDatatype-20020414.jar"/>
+<jar href="interfaceCSGRDS_lib/saxpath-1.0-FCS.jar"/>
+<jar href="interfaceCSGRDS_lib/servlet-api-2.4.jar"/>
+<jar href="interfaceCSGRDS_lib/stax-api-1.0-2.jar"/>
+<jar href="interfaceCSGRDS_lib/xalan-2.7.0.jar"/>
+<jar href="interfaceCSGRDS_lib/xercesImpl-2.9.1.jar"/>
+<jar href="interfaceCSGRDS_lib/xml-apis-2.0.2.jar"/>
+</resources>
+<security>
+  <all-permissions/>
+</security>
+
+<application-desc main-class="com.logica.hraccess.HraccessFileUpdate"/>
+</jnlp>

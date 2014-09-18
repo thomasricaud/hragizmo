@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.3.1.v201309091055 Build &lt;4.3.1.v20130917-1035></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/chart_listing.gif</property>
+    <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.chartlisting</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">procedurecode.rptlibrary</property>
+            <property name="namespace">procedurecode</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="Process" id="40">
+            <property name="valueType">static</property>
+            <property name="isRequired">true</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">UA000</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Source" id="370">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@oradev27:1524:DDEVS</property>
+            <property name="odaUser">HR</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">SFI=</encrypted-property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Target" id="371">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@oradev26:1524:DSTAN</property>
+            <property name="odaUser">HR</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">SFI=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sqbDataSet" name="procedureInTarget" id="44"
+ extends="procedurecode.procedureInSource">
+            <property name="nullsOrdering">nulls lowest</property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">AP40.GPTRAI||AP40.CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">GPTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">TIMODI</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">TYATCH</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="rowFetchLimit">0</property>
+            <property name="dataSource">Target</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">AP40.GPTRAI||AP40.CDTRAI</property>
+                    <property name="nativeName">AP40.GPTRAI||AP40.CDTRAI</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">GPTRAI</property>
+                    <property name="nativeName">GPTRAI</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CDTRAI</property>
+                    <property name="nativeName">CDTRAI</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">TIMODI</property>
+                    <property name="nativeName">TIMODI</property>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">TYATCH</property>
+                    <property name="nativeName">TYATCH</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT DISTINCT AP40.GPTRAI || AP40.CDTRAI, AP40.GPTRAI,
+  AP40.CDTRAI, TR20.TIMODI, AP40.TYATCH
+  FROM
+       TR20 JOIN AP40 ON TR20.GPTRAI = AP40.GPTRAI AND TR20.CDTRAI = AP40.CDTRAI
+  WHERE AP40.CDPROS = ?
+  ORDER BY GPTRAI || CDTRAI ASC
+]]></xml-property>
+            <structure name="designerState">
+                <property name="version">1.0</property>
+                <property name="stateContentAsString">&lt;?xml version="1.0" encoding="UTF-8"?>&#13;
+&lt;SQLQueryBuilder editorInputType="SQLBuilderStorageEditorInput" name="procedureInTarget" version="1.0">&#13;
+&lt;SQLStatement>SELECT DISTINCT AP40.GPTRAI || AP40.CDTRAI, AP40.GPTRAI,&amp;#x0A;  AP40.CDTRAI, TR20.TIMODI, AP40.TYATCH&amp;#x0A;  FROM&amp;#x0A;       TR20 JOIN AP40 ON TR20.GPTRAI = AP40.GPTRAI AND TR20.CDTRAI = AP40.CDTRAI&amp;#x0A;  WHERE AP40.CDPROS = ?&amp;#x0A;  ORDER BY GPTRAI || CDTRAI ASC&amp;#x0A;&lt;/SQLStatement>&#13;
+&lt;connInfo>Oracle_10:Transient.org.eclipse.datatools.enablement.oracle.connectionProfile:dv46:HR&lt;/connInfo>&#13;
+&lt;omitSchemaInfo>false:true:&lt;/omitSchemaInfo>&#13;
+&lt;editorInputUsageOptions>useWindowState=true&lt;/editorInputUsageOptions>&#13;
+&lt;windowState height="493" version="1.0" width="745">&#13;
+&lt;control height="137" isHideable="true" isVisible="true" name="SQLSourceViewer" width="718"/>&#13;
+&lt;control height="174" isHideable="true" isVisible="true" name="DesignViewer" width="731"/>&#13;
+&lt;control height="144" isHideable="true" isVisible="true" name="GraphControl" width="723"/>&#13;
+&lt;control height="148" isHideable="true" isVisible="false" name="OutlineViewer" width="87"/>&#13;
+&lt;/windowState>&#13;
+&lt;/SQLQueryBuilder></property>
+            </structure>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <DataSetParameters>
+    <parameter>
+      <design:ParameterDefinition>
+        <design:inOutMode>In</design:inOutMode>
+        <design:attributes>
+          <design:identifier>
+            <design:name></design:name>
+            <design:position>1</design:position>
+          </design:identifier>
+          <design:nativeDataTypeCode>1</design:nativeDataTypeCode>
+          <design:precision>5</design:precision>
+        </design:attributes>
+      </design:ParameterDefinition>
+    </parameter>
+  </DataSetParameters>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <joint-data-set name="compareProcedure" id="45">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</property>
+                    <property name="alias">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</property>
+                    <text-property name="displayName">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInSource::GPTRAI</property>
+                    <property name="alias">procedureInSource::GPTRAI</property>
+                    <text-property name="displayName">procedureInSource::GPTRAI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInSource::CDTRAI</property>
+                    <property name="alias">procedureInSource::CDTRAI</property>
+                    <text-property name="displayName">procedureInSource::CDTRAI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInSource::TIMODI</property>
+                    <property name="alias">procedureInSource::TIMODI</property>
+                    <text-property name="displayName">procedureInSource::TIMODI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</property>
+                    <property name="alias">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</property>
+                    <text-property name="displayName">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInTarget::CDTRAI</property>
+                    <property name="alias">procedureInTarget::CDTRAI</property>
+                    <text-property name="displayName">procedureInTarget::CDTRAI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInTarget::GPTRAI</property>
+                    <property name="alias">procedureInTarget::GPTRAI</property>
+                    <text-property name="displayName">procedureInTarget::GPTRAI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInTarget::TIMODI</property>
+                    <property name="alias">procedureInTarget::TIMODI</property>
+                    <text-property name="displayName">procedureInTarget::TIMODI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInSource::TYATCH</property>
+                    <property name="alias">procedureInSource::TYATCH</property>
+                </structure>
+                <structure>
+                    <property name="columnName">procedureInTarget::TYATCH</property>
+                    <property name="alias">procedureInTarget::TYATCH</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">procedureInSource::param_1</property>
+                    <property name="dataType">string</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="allowNull">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInTarget::param_1</property>
+                    <property name="dataType">string</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="allowNull">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">procedureInSource::GPTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">procedureInSource::CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">procedureInSource::TIMODI</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">procedureInSource::TYATCH</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">procedureInTarget::GPTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">procedureInTarget::CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">procedureInTarget::TIMODI</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">procedureInTarget::TYATCH</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>procedureInSource</value>
+                <value>procedureInTarget</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">full-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">procedureInSource</property>
+                    <property name="rightDataSet">procedureInTarget</property>
+                    <expression name="leftExpression">dataSetRow["AP40.GPTRAI||AP40.CDTRAI"]</expression>
+                    <expression name="rightExpression">dataSetRow["AP40.GPTRAI||AP40.CDTRAI"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sqbDataSet" name="procedureInSource" id="369"
+ extends="procedurecode.procedureInSource">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">AP40.GPTRAI||AP40.CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">GPTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CDTRAI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">TIMODI</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">TYATCH</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">AP40.GPTRAI||AP40.CDTRAI</property>
+                    <property name="nativeName">AP40.GPTRAI||AP40.CDTRAI</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">GPTRAI</property>
+                    <property name="nativeName">GPTRAI</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CDTRAI</property>
+                    <property name="nativeName">CDTRAI</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">TIMODI</property>
+                    <property name="nativeName">TIMODI</property>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">TYATCH</property>
+                    <property name="nativeName">TYATCH</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT DISTINCT AP40.GPTRAI || AP40.CDTRAI, AP40.GPTRAI,
+  AP40.CDTRAI, TR20.TIMODI, AP40.TYATCH
+  FROM
+       TR20 JOIN AP40 ON TR20.GPTRAI = AP40.GPTRAI AND TR20.CDTRAI = AP40.CDTRAI
+  WHERE AP40.CDPROS = ?
+  ORDER BY GPTRAI || CDTRAI ASC
+]]></xml-property>
+            <structure name="designerState">
+                <property name="version">1.0</property>
+                <property name="stateContentAsString">&lt;?xml version="1.0" encoding="UTF-8"?>&#13;
+&lt;SQLQueryBuilder editorInputType="SQLBuilderStorageEditorInput" name="procedureInSource" version="1.0">&#13;
+&lt;SQLStatement>SELECT DISTINCT AP40.GPTRAI || AP40.CDTRAI, AP40.GPTRAI,&amp;#x0A;  AP40.CDTRAI, TR20.TIMODI, AP40.TYATCH&amp;#x0A;  FROM&amp;#x0A;       TR20 JOIN AP40 ON TR20.GPTRAI = AP40.GPTRAI AND TR20.CDTRAI = AP40.CDTRAI&amp;#x0A;  WHERE AP40.CDPROS = ?&amp;#x0A;  ORDER BY GPTRAI || CDTRAI ASC&amp;#x0A;&lt;/SQLStatement>&#13;
+&lt;connInfo>Oracle_10:Transient.org.eclipse.datatools.enablement.oracle.connectionProfile:dv22:HR&lt;/connInfo>&#13;
+&lt;omitSchemaInfo>false:true:&lt;/omitSchemaInfo>&#13;
+&lt;editorInputUsageOptions>useWindowState=true&lt;/editorInputUsageOptions>&#13;
+&lt;windowState height="608" version="1.0" width="744">&#13;
+&lt;control height="174" isHideable="true" isVisible="true" name="SQLSourceViewer" width="717"/>&#13;
+&lt;control height="216" isHideable="true" isVisible="true" name="DesignViewer" width="730"/>&#13;
+&lt;control height="180" isHideable="true" isVisible="true" name="GraphControl" width="722"/>&#13;
+&lt;control height="184" isHideable="true" isVisible="false" name="OutlineViewer" width="87"/>&#13;
+&lt;/windowState>&#13;
+&lt;/SQLQueryBuilder></property>
+            </structure>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <DataSetParameters>
+    <parameter>
+      <design:ParameterDefinition>
+        <design:inOutMode>In</design:inOutMode>
+        <design:attributes>
+          <design:identifier>
+            <design:name></design:name>
+            <design:position>1</design:position>
+          </design:identifier>
+          <design:nativeDataTypeCode>1</design:nativeDataTypeCode>
+          <design:precision>5</design:precision>
+        </design:attributes>
+      </design:ParameterDefinition>
+    </parameter>
+  </DataSetParameters>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="33">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="37">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="38">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table name="table1" id="9">
+            <property name="width">10.447916666666666in</property>
+            <property name="dataSet">compareProcedure</property>
+            <list-property name="paramBindings">
+                <structure>
+                    <property name="paramName">procedureInSource::param_1</property>
+                    <simple-property-list name="expression">
+                        <value type="javascript">params["Process"].value</value>
+                    </simple-property-list>
+                </structure>
+                <structure>
+                    <property name="paramName">procedureInTarget::param_1</property>
+                    <simple-property-list name="expression">
+                        <value type="javascript">params["Process"].value</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</property>
+                    <text-property name="displayName">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInSource::AP40.GPTRAI||AP40.CDTRAI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInSource::GPTRAI</property>
+                    <text-property name="displayName">procedureInSource::GPTRAI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInSource::GPTRAI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInSource::CDTRAI</property>
+                    <text-property name="displayName">procedureInSource::CDTRAI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInSource::CDTRAI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInSource::TIMODI</property>
+                    <text-property name="displayName">procedureInSource::TIMODI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInSource::TIMODI"]+dataSetRow["procedureInSource::TYATCH"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</property>
+                    <text-property name="displayName">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInTarget::AP40.GPTRAI||AP40.CDTRAI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInTarget::GPTRAI</property>
+                    <text-property name="displayName">procedureInTarget::GPTRAI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInTarget::GPTRAI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInTarget::CDTRAI</property>
+                    <text-property name="displayName">procedureInTarget::CDTRAI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInTarget::CDTRAI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">procedureInTarget::TIMODI</property>
+                    <text-property name="displayName">procedureInTarget::TIMODI</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["procedureInTarget::TIMODI"]+dataSetRow["procedureInTarget::TYATCH"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="pageBreakInterval">50</property>
+            <column id="30">
+                <property name="width">1.9791666666666667in</property>
+            </column>
+            <column id="31">
+                <property name="width">2.8020833333333335in</property>
+            </column>
+            <column id="32">
+                <property name="width">1.8541666666666667in</property>
+            </column>
+            <column id="57">
+                <property name="width">2.25in</property>
+            </column>
+            <column id="63">
+                <property name="width">1.5625in</property>
+            </column>
+            <header>
+                <row id="10">
+                    <cell id="11">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <label id="46">
+                            <text-property name="text">SOURCE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <label id="50">
+                            <text-property name="text">CIBLE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="60">
+                        <label id="64">
+                            <text-property name="text">compare</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="22">
+                    <property name="fontSize">7pt</property>
+                    <property name="color">gray</property>
+                    <list-property name="highlightRules">
+                        <structure>
+                            <property name="operator">is-null</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="color">#000000</property>
+                            <expression name="testExpr" type="javascript">row["procedureInSource::AP40.GPTRAI||AP40.CDTRAI"]</expression>
+                        </structure>
+                        <structure>
+                            <property name="operator">is-null</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="color">#000000</property>
+                            <property name="textLineThrough">line-through</property>
+                            <expression name="testExpr" type="javascript">row["procedureInTarget::AP40.GPTRAI||AP40.CDTRAI"]</expression>
+                        </structure>
+                        <structure>
+                            <property name="operator">ne</property>
+                            <property name="color">#000000</property>
+                            <expression name="testExpr" type="javascript">row["procedureInSource::TIMODI"]</expression>
+                            <simple-property-list name="value1">
+                                <value type="javascript">row["procedureInTarget::TIMODI"]</value>
+                            </simple-property-list>
+                        </structure>
+                    </list-property>
+                    <cell id="23">
+                        <data id="47">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">procedureInSource::AP40.GPTRAI||AP40.CDTRAI</property>
+                        </data>
+                    </cell>
+                    <cell id="24">
+                        <data id="49">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">procedureInSource::TIMODI</property>
+                        </data>
+                    </cell>
+                    <cell id="25">
+                        <data id="51">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">procedureInTarget::AP40.GPTRAI||AP40.CDTRAI</property>
+                        </data>
+                    </cell>
+                    <cell id="54">
+                        <data id="59">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">procedureInTarget::TIMODI</property>
+                        </data>
+                    </cell>
+                    <cell id="61">
+                        <image id="366">
+                            <property name="height">0.125in</property>
+                            <property name="width">0.3020833333333333in</property>
+                            <property name="source">embed</property>
+                            <property name="imageName">compar2e.gif</property>
+                            <list-property name="action">
+                                <structure>
+                                    <property name="linkType">drill-through</property>
+                                    <property name="reportName">procedurecompareEnv.rptdesign</property>
+                                    <property name="targetWindow">_blank</property>
+                                    <property name="targetFileType">report-design</property>
+                                    <list-property name="paramBindings">
+                                        <structure>
+                                            <property name="paramName">USgroupe</property>
+                                            <simple-property-list name="expression">
+                                                <value type="javascript">row["procedureInSource::GPTRAI"]</value>
+                                            </simple-property-list>
+                                        </structure>
+                                        <structure>
+                                            <property name="paramName">USprocedure</property>
+                                            <simple-property-list name="expression">
+                                                <value type="javascript">row["procedureInSource::CDTRAI"]</value>
+                                            </simple-property-list>
+                                        </structure>
+                                        <structure>
+                                            <property name="paramName">INgroup</property>
+                                            <simple-property-list name="expression">
+                                                <value type="javascript">row["procedureInTarget::GPTRAI"]</value>
+                                            </simple-property-list>
+                                        </structure>
+                                        <structure>
+                                            <property name="paramName">INprocedure</property>
+                                            <simple-property-list name="expression">
+                                                <value type="javascript">row["procedureInTarget::CDTRAI"]</value>
+                                            </simple-property-list>
+                                        </structure>
+                                    </list-property>
+                                </structure>
+                            </list-property>
+                        </image>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="26">
+                    <cell id="27"/>
+                    <cell id="28"/>
+                    <cell id="29"/>
+                    <cell id="56"/>
+                    <cell id="62"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+    <list-property name="images">
+        <structure>
+            <property name="name">compar2e.gif</property>
+            <property name="type">image/gif</property>
+            <property name="data">
+                R0lGODlhHQAMAHAAACH5BAEAAPwALAAAAAAdAAwAhwAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgAr
+                mQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq
+                /wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMr
+                MzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOq
+                mTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA
+                /2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaq
+                M2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkA
+                mZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA
+                /5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwA
+                M8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyA
+                mcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz/
+                //8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+A
+                M/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//
+                mf//zP///wAAAAAAAAAAAAAAAAi6APcJHEiwoMGDBCdpQkMMjbJMCvURy0SxYsWHkioOZIhmWJqJmYZF
+                S6Ypk6ZhJlFOAjUpDcRMBKMti1aP5sxl+5RF27eTps96mOgNI1hPoDJ90ATqG6hs6MFJ+jIpGxht6cyp
+                A5dCI4YQZiZ6RJdZpReNHs6zOXmSJQt1GNa0OutBw1lT4LKkRvfVpDdpK959SU8qewvzE0qUyogZfgg1
+                01KBRRFKHug4U2TACPVd7rpM5OSDOw2G/BoQADs=
+</property>
+        </structure>
+    </list-property>
+</report>

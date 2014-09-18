@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__USgroupe_27_0</property>
+            <property name="value">US</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__USprocedure_28_1</property>
+            <property name="value">03Y102</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__INgroup_29_2</property>
+            <property name="value">AS</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__INprocedure_30_3</property>
+            <property name="value">03Y102</property>
+        </structure>
+        <structure>
+            <property name="name">USprocedure_28_4</property>
+            <property name="value">03Y102</property>
+        </structure>
+        <structure>
+            <property name="name">USprocedure_28_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">INgroup_29_5</property>
+            <property name="value">AS</property>
+        </structure>
+        <structure>
+            <property name="name">INgroup_29_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">INprocedure_30_6</property>
+            <property name="value">03Y102</property>
+        </structure>
+        <structure>
+            <property name="name">INprocedure_30_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">USgroupe_27_7</property>
+            <property name="value">US</property>
+        </structure>
+        <structure>
+            <property name="name">USgroupe_27_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>
