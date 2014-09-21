@@ -84,7 +84,30 @@
 		<echo message="upload gizmo.jarr " />
 		<echo message="******************************************" />
 	</target>
+	<target name="upload file_maven">
+			
+			<ftp server="ftpperso.sfr.fr" userid="thomas.ricaud.perso.sfr.fr" password="Thomas03" passive="yes" depends="yes" >
+				<fileset dir="target/jnlp">
+					<include name="*" />
+					<include name="lib/*" />
+				</fileset>
+				<fileset dir=".">
+					<include name="gizmo.html" />
+					<include name="dev.properties" />
+				</fileset>
+			</ftp>
 
+			<echo message="******************************************" />
+			<echo message="End " />
+			<echo message="******************************************" />
+
+
+
+			<echo message="******************************************" />
+			<echo message="open https://sites.google.com/site/hragizmo/home/gizmojar " />
+			<echo message="upload gizmo.jarr " />
+			<echo message="******************************************" />
+		</target>
 	<target name="upload file_rec">
 		<delete file="interfaceCSGRDS.jnlp" />
 		<copy file="interfaceREC.jnlp" tofile="interfaceCSGRDS.jnlp" />
