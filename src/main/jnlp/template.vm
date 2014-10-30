@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+    spec="1.0+"
+    codebase="http://thomas.ricaud.perso.sfr.fr/jnlp"
+    href="$outputFile">
+  <information>
+    <homepage href="http://thomas.ricaud.perso.sfr.fr"/>
+    <title>HRAGizmo</title>
+    <vendor>Thomas Ricaud</vendor>
+    <description kind="one-line">HRAGizmo</description>
+    <description kind="short">HRAGizmo - gestion d'environnement</description>
+    <description kind="tooltip">HRAGizmo - gestion d'environnement</description>
+    <icon href="https://sites.google.com/site/hragizmo/_/rsrc/1387186826732/config/customLogo.gif?revision=6" kind="default"/>
+    <shortcut online="false"><desktop/><menu submenu="HRAGizmo"/></shortcut>
+  </information>
+  <security>
+     <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.5+"/>
+    <property name="jnlp.versionEnabled" value="true" />
+        $dependencies
+ </resources>
+ <application-desc main-class="$mainClass">
+ </application-desc>
+</jnlp>
+    

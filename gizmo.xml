@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="create_run_jar" name="Create Runnable Jar for Project Gizmo with libraries in sub-folder">
+<project default="upload file_maven" name="Create Runnable Jar for Project Gizmo with libraries in sub-folder">
 	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
 	<!--ANT 1.7 is required                                        -->
 	<target name="generateKey">
@@ -22,7 +22,7 @@
 		</genkey>
 
 	</target>
-	<target name="create_run_jar">
+	<target name="create_run_jar" description="inutile avec maven">
 		<jar destfile="../bacasable/gizmo.jar">
 			<manifest>
 				<attribute name="Permissions" value="all-permissions"/>
@@ -87,9 +87,9 @@
 	<target name="upload file_maven">
 			
 			<ftp server="ftpperso.sfr.fr" userid="thomas.ricaud.perso.sfr.fr" password="Thomas03" passive="yes" depends="yes" >
-				<fileset dir="target/jnlp">
-					<include name="*" />
-					<include name="lib/*" />
+				<fileset dir="target">
+					<include name="jnlp/*" />
+					<include name="jnlp/lib/*" />
 				</fileset>
 				<fileset dir=".">
 					<include name="gizmo.html" />
