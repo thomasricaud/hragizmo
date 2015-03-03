@@ -112,7 +112,7 @@ public abstract class Environnement implements Serializable{
 		if (!isConnected) {
 			processIds.put("AS001", "Pas de connection");
 		} else {
-			extractionSource.setMaxRowCount(500);
+			extractionSource.setMaxRowCount(1000);
 			extractionSource
 					.setSQLExtraction("select CDPROS,LILONG from AP21 where CDLANG='F'");
 			extractionSource.setActive(true);

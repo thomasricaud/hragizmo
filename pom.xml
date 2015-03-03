@@ -151,9 +151,9 @@
 			<version>2.1</version>
 		</dependency>
 		<dependency>
-			<groupId>com.hraccess</groupId>
+			<groupId>com.hraccess.openhr</groupId>
 			<artifactId>hr-openhr-api</artifactId>
-			<version>1.2.1</version>
+			<version>1.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt.runtime</groupId>
@@ -169,6 +169,22 @@
 			<groupId>com.hraccess.commons</groupId>
 			<artifactId>hr-kernel</artifactId>
 			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hraccess.openhr</groupId>
+			<artifactId>hr-openhr-api</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>jdbc</artifactId>
+			<version>6</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.cl3</groupId>
+			<artifactId>CL3</artifactId>
+			<version>3.0.0662</version>
 		</dependency>
 	</dependencies>
 </project>

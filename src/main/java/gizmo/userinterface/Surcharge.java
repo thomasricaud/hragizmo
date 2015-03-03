@@ -37,6 +37,7 @@ public class Surcharge extends JFrame {
 		createParameterFields(configuration, "odaURL");
 		createParameterFields(configuration, "odaUser");
 		createParameterFields(configuration, "odaPassword");
+		createParameterFields(configuration, "loginCommand");
 		setSize(400, 400);
 		setVisible(true);
 

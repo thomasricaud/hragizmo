@@ -79,6 +79,9 @@ public class SSHClient extends BaseObjectPool {
 		new Thread(new SyncPipe(sess.getStdout(), ostrm)).start();
 
 		writer = new OutputStreamWriter(sess.getStdin(), "utf-8");
+		if (configuration.containsKey("loginCommand")) {
+			command(configuration.getString("loginCommand"));
+		} 
 		command("nupro=$$");
 		command("export nupro");
 	}

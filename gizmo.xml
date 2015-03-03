@@ -104,8 +104,8 @@
 
 
 			<echo message="******************************************" />
-			<echo message="open https://sites.google.com/site/hragizmo/home/gizmojar " />
-			<echo message="upload gizmo.jarr " />
+			<echo message="open https://sites.google.com/site/hragizmo/ " />
+			<echo message="click on the gizmo link" />
 			<echo message="******************************************" />
 		</target>
 	<target name="upload file_rec">
